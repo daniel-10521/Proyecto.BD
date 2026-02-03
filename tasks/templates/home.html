@@ -1,17 +1,56 @@
 {% extends 'base.html' %}
+
 {% block content %}
-<main class="container py-5">
-    <section class="card card-body">
-        <h1 class="display-1 text-center">Django App</h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quibusdam, dolorem quaerat sapiente possimus atque nesciunt odio modi eveniet enim assumenda voluptates tempore minus dolor fugit, accusantium sequi debitis earum!
-        <div class="text-center">
-            <a class="btn btn-secondary" href="/signin/">
-                Signin
-            </a>
-            <a class="btn btn-dark" href="/signup/">
-                Signup
-            </a>
+<div class="container mt-4">
+    <div class="hero-section text-center mb-5 rounded shadow-sm">
+        <h1 class="display-4 fw-bold">Hola, soy Daniel</h1>
+        <p class="lead text-muted">Estudiante de Tecnologías de la Información en la ULEAM</p>
+        <div class="mt-3">
+            <span class="badge bg-primary">Python</span>
+            <span class="badge bg-dark">Django</span>
+            <span class="badge bg-info">Linux</span>
+            <span class="badge bg-warning text-dark">Arduino</span>
         </div>
-    </section>
-</main>
+    </div>
+
+    <h2 id="proyectos" class="mb-4 text-center">Mis Proyectos</h2>
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Sistema CRUD Django</h5>
+                    <p class="card-text">Aplicación web para la gestión de tareas con autenticación, desplegada en Render.</p>
+                    <a href="{% url 'tasks' %}" class="btn btn-outline-primary btn-sm">Ver Proyecto</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Juego Simon Says (Arduino)</h5>
+                    <p class="card-text">Proyecto de hardware presentado en la casa abierta de la ULEAM. Programación en C++ y diseño de circuitos.</p>
+                    <span class="badge bg-secondary">Hardware</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="habilidades" class="mt-5 p-4 bg-light rounded shadow-sm">
+        <h3 class="text-center mb-4">Habilidades Técnicas</h3>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <h5>Desarrollo Web</h5>
+                <p class="small">Django, Python, SQL, HTML/CSS</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Herramientas & OS</h5>
+                <p class="small">Linux, VS Code, Git, Fibramax Networking</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Electrónica</h5>
+                <p class="small">Arduino IDE, Tinkercad, Diseño de Circuitos</p>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
