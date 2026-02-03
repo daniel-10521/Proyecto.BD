@@ -1,45 +1,49 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="card card-cv p-4">
-    <h3 class="fw-bold mb-4"><i class="bi bi-person-circle me-2"></i> Datos Personales</h3>
-    
-    <div class="row align-items-center mb-5">
-        <div class="col-md-3 text-center">
-            <div class="rounded-3 shadow-sm mx-auto mb-3" style="width: 180px; height: 180px; background-color: #e9ecef; border: 4px solid #f8d7da;">
-                <i class="bi bi-person-fill text-muted" style="font-size: 5rem;"></i>
+<div class="cv-card">
+    <section id="datos" class="mb-5">
+        <h3 class="section-title text-uppercase">Datos Personales</h3>
+        <div class="row align-items-center mb-4">
+            <div class="col-md-3 text-center">
+                <div class="rounded-4 shadow-sm mx-auto bg-light d-flex align-items-center justify-content-center" style="width: 160px; height: 160px; border: 3px solid #ffccd5;">
+                    <i class="bi bi-person text-muted" style="font-size: 4rem;"></i>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <h1 class="fw-bold display-6 mb-1">Daniel</h1>
+                <p class="text-muted"><i class="bi bi-geo-alt-fill me-2"></i>Manta, Manabí, Ecuador</p>
             </div>
         </div>
-        <div class="col-md-9">
-            <h1 class="fw-bold mb-0">Daniel</h1>
-            <p class="text-muted"><i class="bi bi-geo-alt-fill"></i> Manta, Ecuador</p>
+        <div class="row g-4">
+            <div class="col-md-4"><small class="text-muted fw-bold">NACIONALIDAD</small><p>ECUATORIANA</p></div>
+            <div class="col-md-4"><small class="text-muted fw-bold">EDAD</small><p>21 Años</p></div>
+            <div class="col-md-4"><small class="text-muted fw-bold">ESTADO CIVIL</small><p>Soltero</p></div>
+            <div class="col-md-4"><small class="text-muted fw-bold">INSTITUCIÓN</small><p>ULEAM</p></div>
         </div>
-    </div>
+    </section>
 
-    <div class="row g-4">
-        <div class="col-md-4">
-            <label class="text-muted small fw-bold text-uppercase">Nacionalidad</label>
-            <p class="fw-medium">ECUATORIANA</p>
+    <hr class="my-5">
+
+    <section id="formacion" class="mb-5">
+        <h3 class="section-title text-uppercase">Formación Académica</h3>
+        <div class="ms-3 border-start ps-4 pb-3">
+            <h5 class="fw-bold text-primary">Ingeniería en Tecnologías de la Información</h5>
+            <p class="mb-1">Universidad Laica Eloy Alfaro de Manabí</p>
+            <span class="badge bg-light text-dark">2021 - Actualidad</span>
         </div>
-        <div class="col-md-4">
-            <label class="text-muted small fw-bold text-uppercase">Nacimiento</label>
-            <p class="fw-medium">2005 (21 años)</p> </div>
-        <div class="col-md-4">
-            <label class="text-muted small fw-bold text-uppercase">Lugar Nacimiento</label>
-            <p class="fw-medium">Manta</p>
+    </section>
+
+    <section id="proyectos" class="mb-5">
+        <h3 class="section-title text-uppercase">Proyectos de TI</h3>
+        <div class="card border-0 bg-light mb-3 p-3">
+            <h6 class="fw-bold mb-1">Juego Simon Says (Arduino)</h6>
+            <p class="small text-muted mb-0">Presentado en la Casa Abierta ULEAM 2026. Desarrollo de lógica en C++ y circuitos físicos.</p>
         </div>
-        <div class="col-md-4">
-            <label class="text-muted small fw-bold text-uppercase">Celular</label>
-            <p class="fw-medium">Ingresa tu número aquí</p>
+        <div class="card border-0 bg-light p-3">
+            <h6 class="fw-bold mb-1">Sistema Web CRUD con Django</h6>
+            <p class="small text-muted mb-0">Despliegue exitoso en Render utilizando PostgreSQL y Python.</p>
         </div>
-        <div class="col-md-4">
-            <label class="text-muted small fw-bold text-uppercase">Estado Civil</label>
-            <p class="fw-medium">Soltero</p>
-        </div>
-        <div class="col-md-4">
-            <label class="text-muted small fw-bold text-uppercase">Correo</label>
-            <p class="fw-medium small text-primary">tu-correo@estudiantes.uleam.edu.ec</p>
-        </div>
-    </div>
+    </section>
 </div>
 {% endblock %}
