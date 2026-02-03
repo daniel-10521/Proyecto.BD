@@ -9,24 +9,23 @@
     <style>
         :root { --sidebar-bg: #f8f9fa; --active-bg: #343a40; }
         body { background-color: #ffffff; }
-        .sidebar { background-color: var(--sidebar-bg); min-height: 100vh; padding: 20px; border-right: 1px solid #eee; position: fixed; width: 250px; }
-        .nav-link { color: #495057; padding: 12px 15px; border-radius: 10px; margin-bottom: 5px; font-weight: 500; cursor: pointer; }
+        .sidebar { background-color: var(--sidebar-bg); min-height: 100vh; padding: 20px; border-right: 1px solid #eee; position: fixed; width: 250px; z-index: 100; }
+        .nav-link { color: #495057; padding: 12px 15px; border-radius: 10px; margin-bottom: 5px; font-weight: 500; cursor: pointer; border: none; background: none; width: 100%; text-align: left; }
         .nav-link:hover { background-color: #e9ecef; }
         .nav-link.active { background-color: var(--active-bg) !important; color: white !important; }
         .main-content { margin-left: 260px; padding: 40px; }
-        .cv-card { border: 1px solid #f0f0f0; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
-        .header-title { font-weight: 800; text-transform: uppercase; line-height: 1.2; margin-bottom: 30px; }
+        .cv-card { border: 1px solid #f0f0f0; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); background: white; }
     </style>
 </head>
 <body>
-    <div class="sidebar">
-        <h4 class="header-title">HOJA DE VIDA<br>PROFESIONAL</h4>
+    <div class="sidebar d-none d-md-block">
+        <h4 class="fw-bold mb-4">HOJA DE VIDA<br>PROFESIONAL</h4>
         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist">
-            <button class="nav-link active text-start" id="tab-datos" data-bs-toggle="pill" data-bs-target="#datos" type="button"><i class="bi bi-person-fill me-2"></i> Datos Personales</button>
-            <button class="nav-link text-start" id="tab-experiencia" data-bs-toggle="pill" data-bs-target="#experiencia" type="button"><i class="bi bi-briefcase-fill me-2"></i> Experiencia Laboral</button>
-            <button class="nav-link text-start" id="tab-cursos" data-bs-toggle="pill" data-bs-target="#cursos" type="button"><i class="bi bi-mortarboard-fill me-2"></i> Cursos Realizados</button>
-            <button class="nav-link text-start" id="tab-reconocimientos" data-bs-toggle="pill" data-bs-target="#reconocimientos" type="button"><i class="bi bi-award-fill me-2"></i> Reconocimientos</button>
-            <button class="nav-link text-start" id="tab-productos" data-bs-toggle="pill" data-bs-target="#productos" type="button"><i class="bi bi-journal-text me-2"></i> Productos Académicos</button>
+            <button class="nav-link active" id="tab-datos" data-bs-toggle="pill" data-bs-target="#datos" type="button"><i class="bi bi-person-fill me-2"></i> Datos Personales</button>
+            <button class="nav-link" id="tab-experiencia" data-bs-toggle="pill" data-bs-target="#experiencia" type="button"><i class="bi bi-briefcase-fill me-2"></i> Experiencia Laboral</button>
+            <button class="nav-link" id="tab-cursos" data-bs-toggle="pill" data-bs-target="#cursos" type="button"><i class="bi bi-mortarboard-fill me-2"></i> Cursos Realizados</button>
+            <button class="nav-link" id="tab-reconocimientos" data-bs-toggle="pill" data-bs-target="#reconocimientos" type="button"><i class="bi bi-award-fill me-2"></i> Reconocimientos</button>
+            <button class="nav-link" id="tab-productos" data-bs-toggle="pill" data-bs-target="#productos" type="button"><i class="bi bi-journal-text me-2"></i> Productos Académicos</button>
         </div>
     </div>
 
