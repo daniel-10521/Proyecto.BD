@@ -3,40 +3,168 @@
 {% block content %}
 <div class="tab-content" id="v-pills-tabContent">
     
-    <div class="tab-pane fade show active" id="datos" role="tabpanel">
-        <div class="cv-card p-4">
-            <h3 class="fw-bold mb-4"><i class="bi bi-person-circle me-2"></i> Datos Personales</h3>
+    <div class="tab-pane fade show active" id="datos">
+        <div class="card-custom">
+            <h2 class="section-header"><i class="bi bi-person-circle"></i> Datos Personales</h2>
+            
+            <div class="d-flex align-items-center mb-5 p-3 border rounded-4 bg-light">
+                <div class="me-4">
+                    <div class="rounded-3 bg-secondary" style="width: 120px; height: 120px;"></div>
+                </div>
+                <div>
+                    <h1 class="fw-bold mb-1">Daniel</h1>
+                    <h5 class="text-primary mb-2">Estudiante de TI | ULEAM</h5>
+                    <p class="text-muted mb-0"><i class="bi bi-geo-alt-fill"></i> Manta, Manabí, Ecuador</p>
+                </div>
+            </div>
+
             <div class="row g-4">
-                <div class="col-md-4"><label class="text-muted small fw-bold">NACIONALIDAD</label><p>ECUATORIANA</p></div>
-                <div class="col-md-4"><label class="text-muted small fw-bold">NACIMIENTO</label><p>2005 (21 años)</p></div>
-                <div class="col-md-4"><label class="text-muted small fw-bold">ESTADO CIVIL</label><p>Soltero</p></div>
-                <div class="col-md-4"><label class="text-muted small fw-bold">LUGAR NACIMIENTO</label><p>Manta</p></div>
-                <div class="col-md-4"><label class="text-muted small fw-bold">INSTITUCIÓN</label><p>ULEAM</p></div>
-                <div class="col-md-4"><label class="text-muted small fw-bold">CARRERA</label><p>Tecnologías de la Información</p></div>
+                <div class="col-md-6">
+                    <label class="text-muted small fw-bold text-uppercase">Cédula</label>
+                    <p class="fw-bold text-dark">13XXXXXXXX</p>
+                </div>
+                <div class="col-md-6">
+                    <label class="text-muted small fw-bold text-uppercase">Nacionalidad</label>
+                    <p class="fw-bold text-dark">ECUATORIANA</p>
+                </div>
+                <div class="col-md-6">
+                    <label class="text-muted small fw-bold text-uppercase">Nacimiento</label>
+                    <p class="fw-bold text-dark">2005 (21 años)</p>
+                </div>
+                <div class="col-md-6">
+                    <label class="text-muted small fw-bold text-uppercase">Lugar Nacimiento</label>
+                    <p class="fw-bold text-dark">Manta</p>
+                </div>
+                <div class="col-md-6">
+                    <label class="text-muted small fw-bold text-uppercase">Celular</label>
+                    <p class="fw-bold text-dark">09XXXXXXXX</p>
+                </div>
+                <div class="col-md-6">
+                    <label class="text-muted small fw-bold text-uppercase">Estado Civil</label>
+                    <p class="fw-bold text-dark">Soltero</p>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="tab-pane fade" id="experiencia" role="tabpanel">
-        <div class="cv-card p-4">
-            <h3 class="fw-bold mb-4"><i class="bi bi-briefcase-fill me-2"></i> Experiencia Laboral</h3>
-            <div class="border p-3 rounded mb-3">
-                <h5 class="fw-bold text-dark">DESARROLLADOR JUNIOR (DJANGO)</h5>
-                <p class="text-primary mb-1">Proyecto Académico - CRUD</p>
-                <p class="small text-muted">Enero 2026 - Presente</p>
-                <p class="small">Desarrollo y despliegue de aplicaciones web en Render con Python y PostgreSQL.</p>
+    <div class="tab-pane fade" id="experiencia">
+        <div class="card-custom">
+            <h2 class="section-header"><i class="bi bi-briefcase-fill"></i> Experiencia Laboral</h2>
+            
+            <div class="mb-4 border-bottom pb-4">
+                <h4 class="fw-bold">DESARROLLADOR BACKEND JUNIOR</h4>
+                <p class="text-muted text-uppercase small mb-2">PROYECTO INDEPENDIENTE | MANTA</p>
+                <p class="text-primary small fw-bold">Ene. 2026 - Actualidad</p>
+                <p class="mt-2">Desarrollo de aplicación web completa (CRUD) utilizando Python y Django. Despliegue de bases de datos en PostgreSQL y configuración de servidores en Render.</p>
+                <a href="#" class="btn btn-outline-primary btn-sm rounded-pill mt-2">Ver Proyecto</a>
+            </div>
+
+            <div class="mb-4">
+                <h4 class="fw-bold">TÉCNICO DE SOPORTE (PASANTÍAS)</h4>
+                <p class="text-muted text-uppercase small mb-2">ULEAM | DEPARTAMENTO TI</p>
+                <p class="text-primary small fw-bold">2025</p>
+                <p class="mt-2">Mantenimiento de equipos de cómputo y soporte en redes. Configuración de entornos Linux y resolución de problemas de conectividad.</p>
             </div>
         </div>
     </div>
 
-    <div class="tab-pane fade" id="cursos" role="tabpanel">
-        <div class="cv-card p-4">
-            <h3 class="fw-bold mb-4"><i class="bi bi-mortarboard-fill me-2"></i> Cursos Realizados</h3>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Programación de Microcontroladores (Arduino) - Casa Abierta ULEAM 2026</li>
-                <li class="list-group-item">Fundamentos de Redes - Configuración de Routers Fibramax</li>
-                <li class="list-group-item">Administración de Sistemas Linux y Bash</li>
-            </ul>
+    <div class="tab-pane fade" id="cursos">
+        <div class="card-custom">
+            <h2 class="section-header"><i class="bi bi-mortarboard-fill"></i> Cursos Realizados</h2>
+            <div class="list-group list-group-flush">
+                <div class="list-group-item py-3">
+                    <h5 class="mb-1 fw-bold">Programación de Microcontroladores (Arduino)</h5>
+                    <p class="mb-1 text-muted small">Universidad Laica Eloy Alfaro de Manabí (Casa Abierta)</p>
+                    <span class="badge bg-success">Aprobado</span>
+                </div>
+                <div class="list-group-item py-3">
+                    <h5 class="mb-1 fw-bold">Fundamentos de Python y Django</h5>
+                    <p class="mb-1 text-muted small">Autoformación / Documentación Oficial</p>
+                    <span class="badge bg-success">Completado</span>
+                </div>
+                 <div class="list-group-item py-3">
+                    <h5 class="mb-1 fw-bold">Administración de Sistemas Linux</h5>
+                    <p class="mb-1 text-muted small">Curso Técnico Complementario</p>
+                    <span class="badge bg-primary">En curso</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-pane fade" id="reconocimientos">
+        <div class="card-custom">
+            <h2 class="section-header"><i class="bi bi-award-fill"></i> Reconocimientos</h2>
+            <div class="alert alert-warning d-flex align-items-center border-0 shadow-sm" role="alert">
+                <i class="bi bi-trophy-fill me-3 fs-1 text-warning"></i>
+                <div>
+                    <h5 class="alert-heading fw-bold">Participación Destacada Casa Abierta 2026</h5>
+                    <p class="mb-0">Reconocimiento por la implementación innovadora del juego "Simon Says" utilizando hardware libre (Arduino) y diseño de circuitos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-pane fade" id="prod-academicos">
+        <div class="card-custom">
+            <h2 class="section-header"><i class="bi bi-journal-text"></i> Productos Académicos</h2>
+            <div class="card mb-3 border-0 bg-light">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Prototipo de Juego Electrónico "Simon Says"</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Hardware & Software</h6>
+                    <p class="card-text">Diseño de circuito en Tinkercad e implementación física. Código en C++ para lógica de secuencia de memoria.</p>
+                </div>
+            </div>
+            <div class="card border-0 bg-light">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Investigación sobre Frameworks Web</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Desarrollo Web</h6>
+                    <p class="card-text">Análisis comparativo de Django vs Flask para el desarrollo rápido de aplicaciones seguras.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-pane fade" id="prod-laborales">
+        <div class="card-custom">
+            <h2 class="section-header"><i class="bi bi-code-slash"></i> Productos Laborales</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="border rounded p-3 mb-3">
+                        <h5 class="fw-bold">Sistema de Gestión de Tareas (ToDo App)</h5>
+                        <p class="small text-muted">Repositorio Privado / Despliegue Público</p>
+                        <p>Plataforma SaaS funcional que permite a los usuarios registrarse, iniciar sesión y gestionar sus actividades diarias. Integra base de datos PostgreSQL.</p>
+                        <a href="https://github.com/daniel-10521" target="_blank" class="btn btn-dark btn-sm"><i class="bi bi-github"></i> Ver Código</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-pane fade" id="venta">
+        <div class="card-custom">
+            <h2 class="section-header"><i class="bi bi-bag-fill"></i> Venta Garage / Equipos</h2>
+            <p class="text-muted">Equipos y componentes disponibles para proyectos estudiantiles.</p>
+            
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-cpu fs-1 text-secondary"></i>
+                            <h6 class="fw-bold mt-2">Kit Arduino Uno</h6>
+                            <p class="small text-muted">Incluye cables y sensores básicos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-laptop fs-1 text-secondary"></i>
+                            <h6 class="fw-bold mt-2">Componentes Laptop HP</h6>
+                            <p class="small text-muted">Repuestos varios modelo 15-FC0275LA.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
